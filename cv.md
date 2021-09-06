@@ -24,10 +24,10 @@
 
 ## Education 
 
-- Hexlet JS interactive courses
-- HTML Academy HTML interactive courses
-- FreeCodeCamp JS courses
-- Udemy JS course 'Javascript full' in progress
+- [Hexlet JS interactive courses](https://ru.hexlet.io/categories/javascript/courses)
+- [HTML Academy interactive courses](https://htmlacademy.ru/courses)
+- [FreeCodeCamp JS courses](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
+- [Udemy JS course 'Javascript full'](https://www.udemy.com/course/javascript_full/)
 
 ## About me
 
