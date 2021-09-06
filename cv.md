@@ -40,3 +40,10 @@ I'm obsessed with idea to contribute to the web by creating responsive, accessib
 - ability to switch between tasks quickly or focusing on two or more objectives;
 - learnability and a great desire to learn;
 - sense of humor (hepls to deal with any kind of difficulties).
+
+In my free time I am fond of clay modeling, anthropological stories of different nationalities, ecotourism, birdwatching and art of the 20th century.
+
+## My projects 
+
+[Freshnesecom Shop](https://freshnesecomshop.netlify.app/)
+[JS Calculator](https://github.com/llallonen/calc)
