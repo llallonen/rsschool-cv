@@ -3,9 +3,9 @@
 
 ## Contacts 
 
-* **Email:** [llallonen@gmail.com](llallonen@gmail.com)
-* **GitHub:** [Llallonen](https://github.com/llallonen)
-* **Telegram:** [Valeria Sycheva](https://t.me/nguoxtf)
+**Email:** [llallonen@gmail.com](llallonen@gmail.com)<br>
+**GitHub:** [Llallonen](https://github.com/llallonen)<br>
+**Telegram:** [Valeria Sycheva](https://t.me/nguoxtf)
 
 ## Skills
 
@@ -45,5 +45,5 @@ In my free time I am fond of clay modeling, anthropological stories of different
 
 ## My projects 
 
-[Freshnesecom Shop](https://freshnesecomshop.netlify.app/)
+[Freshnesecom Shop](https://freshnesecomshop.netlify.app/)<br>
 [JS Calculator](https://github.com/llallonen/calc)
