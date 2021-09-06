@@ -46,7 +46,7 @@ In my free time I am fond of clay modeling, anthropological stories of different
 ## My projects 
 
 [Freshnesecom Shop](https://freshnesecomshop.netlify.app/)<br>
-[JS Calculator](https://github.com/llallonen/calc)
+[JS Calculator](https://llallonen-calc.netlify.app)
 
 ## Code example 
 Here's my solution of Codewars Kata [Create Phone Number](https://www.codewars.com/kata/525f50e3b73515a6db000b83/javascript):
