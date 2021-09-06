@@ -1,1 +1,0 @@
-https://llallonen.github.io/rsschool-cv/cv
