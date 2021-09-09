@@ -1,0 +1,265 @@
+/*colors variables*/
+$base-brown: rgb(51, 42, 32);
+$lazure: #5ad8c4;
+$darken-lazure: #0ea087;
+$smtransp--lazure: rgba(97, 240, 216, 0.3);
+$coral: #f36b59;
+$lighten-coral: #e4c4c091;
+$yellow: rgba(245, 230, 135, 0.5);
+$pink: #d2babe;
+$white: #ffffff;
+$smtransparent-white: rgba(255, 255, 255, 0.5);
+
+/*common styles*/
+body {
+  margin: 0;
+  background-color:	rgba(143,188,143, 0.2);
+  color: $base-brown;
+  font-family: 'Tenor Sans', 'Montserrat Classic', 'Montserrat', sans-serif;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  color: $base-brown;  
+  border-bottom: 1px solid transparent;
+  
+  &:after {
+    display: block;
+    width: 100%;
+    content: '';
+    border-bottom: 2px solid $darken-lazure;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  &:hover:after {
+    transform:scaleX(1);
+    transform-origin: center;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding-right: 45px;
+  background-color: $white;
+
+  @media screen and (max-width: 900px) {
+    padding: 0;
+  }
+}
+
+.skills__list li::marker,
+.about-me__strengths li::marker, 
+.languages__list li::marker {
+  color: $coral;
+  font-size: 20px;
+}
+
+/*aside block*/
+.aside {
+  position: fixed;
+  width: 20%;
+  min-width: 300px;
+  height: 100%;
+
+  @media screen and (max-width: 900px) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    //padding: 0 20px;
+  }
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 330px;
+  height: 100%;
+  border-top-left-radius: 177px;
+  border-top-right-radius: 177px;
+  background-color: $lazure;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    //margin: 0 -20px;
+    padding: 0 0 0 250px;
+    border-radius: 0;
+  }
+
+  &__list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    line-height: 2;
+    z-index: 2;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+
+  &__item {
+    a {
+      display: inline-block;
+      color: $white;
+    }
+
+    a:after {
+      border-bottom: 2px solid $smtransparent-white;
+    }
+  }
+}
+
+.photo {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: 2;
+
+  @media screen and (max-width: 900px) {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+
+  .my-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0px 30px $coral inset;
+    -moz-box-shadow: 0px 0px 0px 30px $coral inset;
+    box-shadow: 0px 0px 0px 30px $coral inset;
+  }
+  
+  img {
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    object-fit: contain;
+    border-radius: 50%;
+
+  }
+
+  h2 {
+  display: none;
+  }
+}
+
+/*main part on right*/
+.main,
+.footer {
+  margin-left: 40%;
+
+  @media screen and (max-width: 900px) {
+    margin: 0 70px;
+    padding-top: 0;
+  }
+}
+
+.main {
+  padding-top: 70px;
+}
+
+section {
+  padding-bottom: 10px;
+}
+
+h1.main-heading {
+  width: 300px;
+  margin: 0;
+  font-size: 46px;
+  color: $coral;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+h2 {
+  color: $darken-lazure;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.education__list,
+.contacts__list,
+.my-projects__list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
+
+  li {
+    display: flex;
+  }
+}
+
+.contacts {
+  width: 180px;
+
+  h2 {
+    display: none;
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }  
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  a {
+  line-height: normal;
+    &:after {
+      border-color:transparent;
+    }
+
+    &:hover {   
+      svg {
+      -webkit-filter: drop-shadow( 1px 1px 10px $darken-lazure);
+      filter: drop-shadow( 1px 1px 5px $darken-lazure);
+      }
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.about-me {
+  p {
+    font-size: 18px;
+  }
+}
+
+.my-projects__list {
+  list-style: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}

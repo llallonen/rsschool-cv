@@ -1,0 +1,240 @@
+/*colors variables*/
+/*common styles*/
+body {
+  margin: 0;
+  background-color: rgba(143, 188, 143, 0.2);
+  color: #332a20;
+  font-family: "Tenor Sans", "Montserrat Classic", "Montserrat", sans-serif;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  color: #332a20;
+  border-bottom: 1px solid transparent;
+}
+a:after {
+  display: block;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #0ea087;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding-right: 45px;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.skills__list li::marker,
+.about-me__strengths li::marker,
+.languages__list li::marker {
+  color: #f36b59;
+  font-size: 20px;
+}
+
+/*aside block*/
+.aside {
+  position: fixed;
+  width: 20%;
+  min-width: 300px;
+  height: 100%;
+}
+@media screen and (max-width: 900px) {
+  .aside {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 330px;
+  height: 100%;
+  border-top-left-radius: 177px;
+  border-top-right-radius: 177px;
+  background-color: #5ad8c4;
+}
+@media screen and (max-width: 900px) {
+  .menu {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    padding: 0 0 0 250px;
+    border-radius: 0;
+  }
+}
+.menu__list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  line-height: 2;
+  z-index: 2;
+}
+@media screen and (max-width: 900px) {
+  .menu__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.menu__item a {
+  display: inline-block;
+  color: #ffffff;
+}
+.menu__item a:after {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.photo {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: 2;
+}
+@media screen and (max-width: 900px) {
+  .photo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+}
+.photo .my-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 30px #f36b59 inset;
+  -moz-box-shadow: 0px 0px 0px 30px #f36b59 inset;
+  box-shadow: 0px 0px 0px 30px #f36b59 inset;
+}
+.photo img {
+  height: calc(100% - 60px);
+  width: calc(100% - 60px);
+  object-fit: contain;
+  border-radius: 50%;
+}
+.photo h2 {
+  display: none;
+}
+
+/*main part on right*/
+.main,
+.footer {
+  margin-left: 40%;
+}
+@media screen and (max-width: 900px) {
+  .main,
+.footer {
+    margin: 0 70px;
+    padding-top: 0;
+  }
+}
+
+.main {
+  padding-top: 70px;
+}
+
+section {
+  padding-bottom: 10px;
+}
+
+h1.main-heading {
+  width: 300px;
+  margin: 0;
+  font-size: 46px;
+  color: #f36b59;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+h2 {
+  color: #0ea087;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.education__list,
+.contacts__list,
+.my-projects__list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+.education__list li,
+.contacts__list li,
+.my-projects__list li {
+  display: flex;
+}
+
+.contacts {
+  width: 180px;
+}
+.contacts h2 {
+  display: none;
+}
+.contacts__list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts svg {
+  width: 20px;
+  height: 20px;
+}
+.contacts a {
+  line-height: normal;
+}
+.contacts a:after {
+  border-color: transparent;
+}
+.contacts a:hover svg {
+  -webkit-filter: drop-shadow(1px 1px 10px #0ea087);
+  filter: drop-shadow(1px 1px 5px #0ea087);
+}
+.contacts a img {
+  width: 20px;
+  height: 20px;
+}
+
+.about-me p {
+  font-size: 18px;
+}
+
+.my-projects__list {
+  list-style: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */
