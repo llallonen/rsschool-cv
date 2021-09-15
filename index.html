@@ -22,16 +22,30 @@
             <img src="src/img/photo.jpg" alt="My photo" >
           </div>
         </section>
-        <div class="menu">
+        <div class="burger-menu" id="burger">
+          <span class="burger"><span class="burger__middle"></span></span>
+        </div>
+        <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item" id="about"><a href="#about-anchor">About Me</a></li>
-            <li class="menu__item" id="skills"><a href="#skills-anchor">Skills</a></li>
-            <li class="menu__item" id="languages"><a href="#languages-anchor">Languages</a></li>
-            <li class="menu__item" id="education"><a href="#education-anchor">Education</a></li>
-            <li class="menu__item" id="projects"><a href="#projects-anchor">My projects</a></li>
-            <li class="menu__item" id="code"><a href="#code-anchor">Code Example</a></li>
+            <li class="menu__item" id="about">
+              <a class="link" href="#about-anchor">About Me</a>
+            </li>
+            <li class="menu__item" id="skills">
+              <a class="link" href="#skills-anchor">Skills</a>
+            </li>
+            <li class="menu__item" id="languages">
+              <a class="link" href="#languages-anchor">Languages</a>
+            </li>
+            <li class="menu__item" id="education">
+              <a class="link" href="#education-anchor">Education</a></li>
+            <li class="menu__item" id="projects">
+              <a href="#projects-anchor">My projects</a>
+            </li>
+            <li class="menu__item" id="code">
+              <a class="link" href="#code-anchor">Code Example</a>
+            </li>
           </ul>
-        </div>        
+        </nav>
       </aside>
       <main class="main">
         <section class="about-me" id="about-anchor">
@@ -109,17 +123,17 @@
           <h2 id="education-anchor">Education</h2>
           <ul class="education__list">
             <li class="education__item">
-              <a href="https://ru.hexlet.io/categories/javascript/courses">
+              <a class="link" href="https://ru.hexlet.io/categories/javascript/courses">
                 Hexlet JS interactive courses</a></li>
             <li class="education__item">
-              <a href="https://htmlacademy.ru/coursest">
+              <a class="link" href="https://htmlacademy.ru/coursest">
                 HTML Academy HTML interactive courses</a>
               </li>
             <li class="education__item">
-              <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">
+              <a class="link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">
                 FreeCodeCamp JS courses</a></li>
             <li class="education__item">
-              <a href="https://www.udemy.com/course/javascript_full/">
+              <a class="link" href="https://www.udemy.com/course/javascript_full/">
                 Udemy JS course 'Javascript full' in progress</a></li>
             <li class="education__item">
               Moscow Pedagogical State University (MPGU), Tourism bachelor
@@ -130,49 +144,82 @@
           <h2 id="projects-anchor">My projects</h2>
           <ul class="my-projects__list">
             <li>
-              <a href="https://freshnesecomshop.netlify.app/">Freshnesecom Shop</a>
+              <a class="my-projects__preview my-projects--fr" href="https://freshnesecomshop.netlify.app/">
+                <h3>Freshnesecom</h3>
+                <img  src="src/img/freshnesecom.png" alt="">
+                </a>
             </li>
             <li>
-              <a href="https://llallonen.github.io/calc/">JS calculator</a>
+              <a class="my-projects__preview my-projects--calc" href="https://llallonen.github.io/calc/">
+                <h3>JS calculator</h3>
+                <img src="src/img/calc.jpg" alt="">
+              </a>
             </li>
           </ul>
         </section>
         <section class="code-example">
           <h2 id="code-anchor">Code example</h2>
           <p>Here's my solution of Codewars Kata
-            <a href="https://www.codewars.com/kata/525f50e3b73515a6db000b83/javascript">Create Phone Number</a></p>
-          <pre>
+            <a class="link" href="https://www.codewars.com/kata/525f50e3b73515a6db000b83/javascript">Create Phone Number</a></p>
+          <pre class="example--desktop">
             <code class="language-javascript">
-      
-      function scoreboard(string) {
-        let template = {
-          one: 1,
-          two: 2,
-          three: 3,
-          four: 4,
-          five: 5,
-          six: 6,
-          seven: 7,
-          eight: 8,
-          nine: 9,
-          nil: 0,
-        };
-      
-        return string.split(" ").map((word) => {
-          if (template.hasOwnProperty(word)) {
-            return template[word]
-          }
-        }).filter(Number.isInteger);
-      }
+
+        function scoreboard(string) {
+          let template = {
+            one: 1,
+            two: 2,
+            three: 3,
+            four: 4,
+            five: 5,
+            six: 6,
+            seven: 7,
+            eight: 8,
+            nine: 9,
+            nil: 0,
+          };
+
+          return string
+          .split(" ").map((word) => {
+            if (template.hasOwnProperty(word)) {
+              return template[word]
+            }
+          }).filter(Number.isInteger);
+        }
+            </code>
+          </pre>
+          <pre class="example--mobile">
+            <code class="language-javascript">
+
+function scoreboard(string) {
+  let template = {
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    seven: 7,
+    eight: 8,
+    nine: 9,
+    nil: 0,
+  };
+
+  return string.split(" ")
+               .map((word) => {
+    if (template.hasOwnProperty(word)) {
+      return template[word]
+    }
+  }).filter(Number.isInteger);
+}
             </code>
           </pre>
         </section>
       </main>
       <footer class="footer">
-        <a href="https://github.com/llallonen">
+        <a class="link"  href="https://github.com/llallonen">
           <img src="src/img/github.png" alt="Github" width='20'>
           My Github</a>
-        <a href="https://rs.school/js/">
+        <a class="link" href="https://rs.school/js/">
           <img src="src/img/rsschool.svg" alt="RS School" width="70"></a>
       </footer>
     </div>
