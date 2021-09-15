@@ -340,6 +340,12 @@ h2 {
 .my-projects__list {
   list-style: none;
 }
+.my-projects li {
+  display: block;
+}
+.my-projects li:first-of-type {
+  margin-bottom: 32px;
+}
 .my-projects--fr:before, .my-projects--calc:before {
   position: absolute;
   top: 47%;
@@ -353,9 +359,6 @@ h2 {
     display: none;
   }
 }
-.my-projects--fr {
-  margin-bottom: 15px;
-}
 .my-projects--fr:before {
   content: "Freshnesecom";
 }
@@ -366,12 +369,14 @@ h2 {
   position: relative;
   display: flex;
   width: 100%;
+  margin-bottom: 13px;
 }
 @media screen and (max-width: 560px) {
   .my-projects__preview {
     display: block;
     width: 85%;
     margin: auto;
+    margin-bottom: 7px;
   }
 }
 .my-projects__preview:hover {
@@ -395,6 +400,17 @@ h2 {
 @media screen and (min-width: 561px) {
   .my-projects__preview h3 {
     display: none;
+  }
+}
+.my-projects p {
+  width: 70%;
+  margin: auto;
+  font-size: 15px;
+  color: #332a20;
+}
+@media screen and (max-width: 560px) {
+  .my-projects p {
+    width: 85%;
   }
 }
 
