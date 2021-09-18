@@ -48,7 +48,7 @@ window.addEventListener('resize', () => {
 })
 
 console.log(`
-  PR: /*link*/
+  PR: https://github.com/llallonen/rsschool-cv/pull/5
   
   Score 150/160
 
