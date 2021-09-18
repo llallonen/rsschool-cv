@@ -168,8 +168,8 @@
           <pre class="example--desktop">
             <code class="language-javascript">
 
-        function scoreboard(string) {
-          let template = {
+        function createPhoneNumber(string) {
+          let base = {
             one: 1,
             two: 2,
             three: 3,
@@ -184,8 +184,8 @@
 
           return string
           .split(" ").map((word) => {
-            if (template.hasOwnProperty(word)) {
-              return template[word]
+            if (base.hasOwnProperty(word)) {
+              return base[word]
             }
           }).filter(Number.isInteger);
         }
@@ -194,8 +194,8 @@
           <pre class="example--mobile">
             <code class="language-javascript">
 
-function scoreboard(string) {
-  let template = {
+function createPhoneNumber(string) {
+  let base = {
     one: 1,
     two: 2,
     three: 3,
@@ -210,8 +210,8 @@ function scoreboard(string) {
 
   return string.split(" ")
                .map((word) => {
-    if (template.hasOwnProperty(word)) {
-      return template[word]
+    if (base.hasOwnProperty(word)) {
+      return base[word]
     }
   }).filter(Number.isInteger);
 }
