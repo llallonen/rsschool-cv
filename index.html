@@ -19,7 +19,7 @@
         <section class="photo">
           <h2>Photo</h2>
           <div class="my-photo">
-            <img src="src/img/photo.jpg" alt="My photo" >
+            <img src="src/img/photo.jpg" alt="My photo">
           </div>
         </section>
         <div class="menu">
@@ -31,7 +31,7 @@
             <li class="menu__item" id="projects"><a href="#projects-anchor">My projects</a></li>
             <li class="menu__item" id="code"><a href="#code-anchor">Code Example</a></li>
           </ul>
-        </div>        
+        </div>
       </aside>
       <main class="main">
         <section class="about-me" id="about-anchor">
@@ -47,9 +47,9 @@
               </li>
               <li>
                 <a href="https://github.com/llallonen">
-                  <svg  class ="svg-link" height="24" aria-hidden="true" viewBox="0 0 16 16" 
+                  <svg  class ="svg-link" height="24" aria-hidden="true" viewBox="0 0 16 16"
                   version="1.1" width="32">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29
                     6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                 </svg>
                 </a>
@@ -158,7 +158,7 @@
           nil: 0,
         };
       
-        return string.split(" ").map((word) => {
+        return string.split(" ").map((word) =&gt; {
           if (template.hasOwnProperty(word)) {
             return template[word]
           }
@@ -170,14 +170,14 @@
       </main>
       <footer class="footer">
         <a href="https://github.com/llallonen">
-          <img src="src/img/github.png" alt="Github" width='20'>
+          <img src="src/img/github.png" alt="Github" width="20">
           My Github</a>
         <a href="https://rs.school/js/">
           <img src="src/img/rsschool.svg" alt="RS School" width="70"></a>
       </footer>
     </div>
   </div>
-  <script src='script.js'></script>
+  <script src="script.js"></script>
   <script src="highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </body>
